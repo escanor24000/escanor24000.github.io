@@ -16,6 +16,7 @@ li
 a:hover
 {
     color: #0065fc;
+    border-top: 1px solid #0065fc;
 }
 
 img
@@ -65,18 +66,32 @@ img
 .rsv-header__nav--menu
 {
    display:flex;
-   margin-top: 07%;
+   margin-top: 09%;
 }
 
-.rsv-header__nav--menu--act
+.rsv-header__nav--menu--heb a
 {
-    margin-left: 2rem;
+    padding-top: 38px;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-decoration:none 
+}
+
+.rsv-header__nav--menu--act a
+{
+    padding-top: 38px;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-decoration:none
 }
 
 .rsv-header__nav--menu--ins a
 {
-    margin-left: 2rem;
+    padding-top: 38px;
+    padding-left: 23px;
+    padding-right: 23px;
     color: blue;
+    text-decoration:none
 }
 
 .rsv-header__sous--menu--titre
