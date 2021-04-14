@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Reservia</title>
     <script src="https://kit.fontawesome.com/47f987694b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,20 +17,20 @@
             <img class="rsv-header__logo" src="logo/logo.png" alt="logo Reservia">
 
             <nav class="rsv-header__nav">
-                <ul class="rsv-header__nav--menu">
+                <div class="rsv-header__nav--menu">
 
-                    <div class="rsv-header__nav--menu--heb">
+                    <div class="rsv-header__nav--menu--itm">
                     <li><a href="#ancre-hebergement">Hébergements</a></li>
                     </div>
 
-                    <div class="rsv-header__nav--menu--act">
+                    <div class="rsv-header__nav--menu--itm">
                     <li><a href="#ancre-activités">Activités</a></li>
                     </div>
 
                     <div class="rsv-header__nav--menu--ins">
                     <li><a href="#">S'inscrire</a></li>
                     </div>
-                </ul>
+                </div>
             </nav>
 
         </header>
@@ -48,7 +49,7 @@
                     </div>
 
                     <div class="rsv-header__recherche--barre">
-                    <input type="search" id="recherche" name="q" placeholder="  Marseille, France">
+                    <input type="search" id="recherche" name="q" placeholder="Marseille, France">
                     </div>
 
                     <div class="rsv-header__recherche--bouton">
@@ -113,10 +114,10 @@
         <div class="rsv-information">
 
             <div class="rsv-information--item">
-            <i id="item--info" class="fas fa-info-circle"></i>
+            <i id="item--info" class="fas fa-info"></i>
             </div>
 
-            <p>Plus de 500 logements sont disponibles dans cete ville</p>
+            <p class="rsv-information--texte">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
         <main class="rsv-main">
@@ -140,12 +141,12 @@
 
                             <div class="Auberge_La_Cannebière--info">
                             <p class="Auberge_La_Cannebière--info--titre">Auberge La Cannebière</p>
-                            <p>Nuit à partir de 25€</p>
+                            <p class="Auberge_La_Cannebière--info--nuit">Nuit à partir de 25€</p>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
-                            <i class="far fa-star bluestar"></i>
+                            <i class="fas fa-star greystar"></i>
                             </div>
                         </div>
 
@@ -158,7 +159,7 @@
 
                             <div class="Hôtel_du_port--info">
                             <p class="Hôtel_du_port--info--titre">Hôtel du port</p>
-                            <p>Nuit à partir de 52€</p>
+                            <p class="Hôtel_du_port--info--titre--nuit">Nuit à partir de 52€</p>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
@@ -177,12 +178,12 @@
 
                             <div class="Hôtel_Les_mouettes--info">
                             <p class="Hôtel_Les_mouettes--info--titre">Hôtel Les mouettes</p>
-                            <p>Nuit à partir de 76€</p>
+                            <p class="Hôtel_Les_mouettes--info--titre--nuit">Nuit à partir de 76€</p>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
-                            <i class="far fa-star bluestar"></i>
+                            <i class="fas fa-star greystar"></i>
                             </div>
                         </div>
 
@@ -200,12 +201,12 @@
 
                             <div class="Hôtel_de_la_mer--info">
                             <p class="Hôtel_de_la_mer--info--titre">Hôtel de la mer</p>
-                            <p>Nuit à partir de 46€</p>
+                            <p class="Hôtel_de_la_mer--info--titre--nuit">Nuit à partir de 46€</p>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
-                            <i class="far fa-star bluestar"></i>
-                            <i class="far fa-star bluestar"></i>
+                            <i class="fas fa-star greystar"></i>
+                            <i class="fas fa-star greystar"></i>
                             </div>
 
                         </div>
@@ -220,12 +221,12 @@
 
                             <div class="Auberge_Le_Panier--info">
                             <p class="Auberge_Le_Panier--info--titre">Auberge Le Panier</p>
-                            <p>Nuit à partir de 23€</p>
+                            <p class="Auberge_Le_Panier--info--titre--nuit">Nuit à partir de 23€</p>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
-                            <i class="far fa-star bluestar"></i>
+                            <i class="fas fa-star greystar"></i>
                             </div>
 
                         </div>
@@ -240,7 +241,7 @@
 
                             <div class="Hôtel_chez_Amina--info">
                             <p class="Hôtel_chez_Amina--info--titre">Hôtel chez Amina</p>
-                            <p>Nuit à partir de 96€</p>
+                            <p class="Hôtel_chez_Amina--info--titre--nuit">Nuit à partir de 96€</p>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
                             <i class="fas fa-star bluestar"></i>
@@ -297,7 +298,7 @@
                         <i class="fas fa-star bluestar"></i>
                         <i class="fas fa-star bluestar"></i>
                         <i class="fas fa-star bluestar"></i>
-                        <i class="far fa-star bluestar"></i>
+                        <i class="fas fa-star greystar"></i>
                         </div>
                     </div>
 
@@ -316,7 +317,7 @@
                         <i class="fas fa-star bluestar"></i>
                         <i class="fas fa-star bluestar"></i>
                         <i class="fas fa-star bluestar"></i>
-                        <i class="far fa-star bluestar"></i>
+                        <i class="fas fa-star greystar"></i>
                         </div>
                     </div>
 
