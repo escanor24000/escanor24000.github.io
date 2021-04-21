@@ -13,8 +13,6 @@ li
     list-style: none;
 }
 
-
-
 img
 {
     object-fit:cover;
@@ -960,4 +958,85 @@ input::placeholder
 .rsv-footer__listThree--contac
 {
     margin-bottom: 1em;
+}
+
+@media screen and (max-width: 480px)
+{
+
+    body
+    {
+    
+    }
+
+    .rsv-filtre
+    {
+        flex-direction: column;
+        align-items: start
+    }
+
+    .rsv-filtre--eco--fam--phone
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rsv-filtre__eco
+    {
+        margin-left: 0%;
+    }
+
+    .rsv-filtre__rom
+    {
+        margin-left: 0%;
+    }
+
+    .rsv-filtre__ani
+    {
+        margin-left: 0%;
+    }
+
+    .bloc_page
+    {
+        
+    }
+
+    section
+    {
+        flex-direction: column;
+    }
+
+    .rsv-main__sectionOne
+    {
+        flex-direction: column-reverse;
+    }
+
+    .rsv-main__sectionOne--heb
+    {
+        background-color: white;
+    }
+
+    .premierblock
+    {
+        flex-direction: column;
+    }
+
+    .deuxiemeblock
+    {
+        flex-direction: column;
+    }
+
+    .rsv-main__sectionOne--pop
+    {
+        width: auto;
+    }
+
+    .grosblock
+    {
+        flex-direction: column;
+    }
+
+    .rsv-footer
+    {
+        flex-direction: column;
+    }
 }
