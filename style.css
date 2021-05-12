@@ -3,7 +3,7 @@
     src: url('fonts/Raleway-Light.ttf');
 }
 
-h1, p, li, h2, input::placeholder
+h1, p, li, h2, input::placeholder, .rsv-header__nav--menu--itm--heb
 {
     font-family: 'Raleway', sans-serif ;
 }
@@ -19,6 +19,7 @@ img
     width: 100%;
     height: 11rem;
 }
+
 .filters_icons {
     background-color: #deebff;
     height: inherit;
@@ -33,15 +34,15 @@ img
 .bluestar 
 {
     color: #0065fc;
-    width: 5%;
-    font-size: 12px;
+    width: 4%;
+    font-size: 13px;
 }
 
 .greystar
 {
    color: grey;
-   width: 5%;
-   font-size: 12px;
+   width: 4%;
+   font-size: 13px;
 }
 
 .bloc_page
@@ -60,10 +61,14 @@ img
 
 .rsv-header__logo
 {
+    width: 100%;
+}
+
+.rsv-header__logo--image
+{
     width: 100px;
-    height: 48px;
+    height: 47px;
     object-position: left;
-    object-fit: contain;
     flex-grow: 1;
 }
 
@@ -73,24 +78,55 @@ img
    margin-top: 09%;
 }
 
-.rsv-header__nav--menu--itm a
+.rsv-header__nav--menu--heb--act
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 0%;
+}
+
+.rsv-header__nav--menu--itm--heb a
 {
     color: #202020;
-    padding-top: 38px;
+    display: flex;
+    padding-top: 27px;
+    height: 35%;
     padding-left: 23px;
     padding-right: 23px;
     text-decoration:none 
 }
 
-.rsv-header__nav--menu--itm a:hover
+.rsv-header__nav--menu--itm--act a
+{
+    color: #202020;
+    display: flex;
+    padding-top: 27px;
+    height: 35%;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-decoration:none  
+}
+
+.rsv-header__nav--menu--itm--heb a:hover
 {
     color: #0065fc;
-    border-top: 1px solid #0065fc;
+    border-top: 0.5px solid #0065fc;
+}
+
+.rsv-header__nav--menu--itm--act a:hover
+{
+    color: #0065fc;
+    border-top: 0.5px solid #0065fc;
+}
+
+.rsv-header__nav--menu--ins
+{
+    margin-top: 23%;
 }
 
 .rsv-header__nav--menu--ins a
 {
-    padding-top: 38px;
     padding-left: 23px;
     padding-right: 23px;
     color: blue;
@@ -159,6 +195,18 @@ input::placeholder
     color: black;
 }
 
+.rsv-header__recherche--bouton--corp--logo
+{
+    display: none;
+    height: 99%;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    width: 154%;
+    background-color: #0065fc;
+    color: white;
+    border: none;
+}
+
 .rsv-header__recherche--bouton--corp
 {
     height: 99%;
@@ -180,6 +228,12 @@ input::placeholder
 .rsv-filtre--titre
 {
     font-size: 12px;
+}
+
+.rsv-filtre--eco--fam
+{
+    display: flex;
+    flex-direction: row;
 }
 
 .rsv-filtre__eco
@@ -960,12 +1014,129 @@ input::placeholder
     margin-bottom: 1em;
 }
 
-@media screen and (max-width: 480px)
+@media screen and (max-device-width: 480px)
 {
-
-    body
+    .bluestar
     {
+        width: 7%;
+        font-size: 11px;
+    }
+
+    .greystar
+    {
+        font-size: 11px;
+        width: 7%;
+    }
+
+    .rsv-header
+    {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .rsv-header__logo
+    {
+        width: 76%;
+    }
+
+    .rsv-header__logo--image
+    {
+       width: 7em;
+    }
+
+    .rsv-header__nav--menu--itm--heb a
+{
+    padding-bottom: 9px;
     
+}
+
+    .rsv-header__nav--menu--itm--heb a:hover
+    {
+            color: #0065fc;
+            border-bottom: 1px solid #0065fc;
+            border-top: none;
+            padding-left: 19px;
+            padding-right: 19px;
+    }
+
+    .rsv-header__nav--menu--itm--act a:hover
+    {
+        color: #0065fc;
+        border-bottom: 1px solid #0065fc;
+        border-top: none;
+        padding-bottom: 9px;
+        padding-left: 32px;
+        padding-right: 50px;
+        padding-top: 15%;
+    }
+
+    .rsv-header__nav--menu
+    {
+        flex-direction: column-reverse;
+    }
+
+    .rsv-header__nav--menu--itm a
+    {
+        padding-top: 14px;
+        padding-left: 34px;
+    }
+
+    .rsv-header__nav--menu--ins a
+    {
+        padding: 0%;
+    }
+
+    .rsv-header__nav--menu--heb--act
+    {
+        display: flex;
+        flex-direction: row;
+        order: 3;
+        margin-bottom: 1em;
+    }
+
+    .rsv-header__sous--menu--titre
+    {
+        font-size: 19px;
+        width: 99%;
+    }
+
+    .rsv-header__sous--menu--texte
+    {
+        width: 20em;
+        margin-bottom: 2em;
+        font-size: 84%;
+        font-weight: bolder;
+    }
+
+    .rsv-header__recherche--item
+    {
+        padding-right: 6%;
+    }
+
+    #recherche
+    {
+        width: 15em;
+    }
+
+    .rsv-header__recherche--bouton--corp
+    {
+        width: 4em;
+        border-radius: 1em;
+        display: none;
+    }
+
+    .rsv-header__recherche--bouton--corp--logo
+    {
+        display: block;
+    }
+
+    .filters_icons
+    {
+        width: 44px;
+        margin-right: 10px;
+        height: 44px;
+        font-size: 14px;
+        border-radius: 3em;
     }
 
     .rsv-filtre
@@ -974,7 +1145,7 @@ input::placeholder
         align-items: start
     }
 
-    .rsv-filtre--eco--fam--phone
+    .rsv-filtre--eco--fam
     {
         display: flex;
         flex-direction: row;
@@ -983,21 +1154,86 @@ input::placeholder
     .rsv-filtre__eco
     {
         margin-left: 0%;
+        width: 53%;
+        height: 41px;
+    }
+
+    .rsv-filtre__eco--itm--money
+    {
+        width: 56px;
+        height: 42px;
+    }
+
+    .rsv-filtre__eco--title
+    {
+        font-size: 10px;
+    }
+
+    .rsv-filtre__fam
+    {
+        margin-left: 3%;
+        width: 53%;
+        height: 41px;
+    }
+
+    .rsv-filtre__fam--item--perso
+    {
+        width: 43px;
+        height: 42px;
+    }
+
+    .rsv-filtre__fam--title
+    {
+        font-size: 10px;
+        margin-right: 12px;
     }
 
     .rsv-filtre__rom
     {
         margin-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 53%;
+        height: 41px;
+    }
+
+    .rsv-filtre__rom--title
+    {
+        font-size: 10px;
+        margin-right: 12px;
     }
 
     .rsv-filtre__ani
     {
         margin-left: 0%;
+        width: 69%;
+        height: 41px;
     }
 
-    .bloc_page
+    .rsv-filtre__ani--title
     {
-        
+        font-size: 10px;
+    }
+
+    .rsv-information
+    {
+        width: 100%;
+    }
+
+    .rsv-information--item
+    {
+        font-size: 12px;
+        margin-bottom: inherit;
+        margin-right: 11px;
+        width: 35px;
+        margin-right: 11px;
+        border: 1px solid gainsboro;
+        height: 24px;
+    }
+
+    .rsv-information--texte
+    {
+        font-weight: unset;
     }
 
     section
@@ -1013,21 +1249,328 @@ input::placeholder
     .rsv-main__sectionOne--heb
     {
         background-color: white;
+        width: 100%;
+    }
+ 
+
+    .rsv-main__sectionOne--pop
+    {
+        width: 100%;
+        border-radius: initial;
+        margin-left: 0%;
+        height: 29em;
+    }
+
+    .titre_aside
+    {
+      align-items: baseline;
+      width: 99%;  
+    }
+
+    .titre_aside--popu
+    {
+        margin-top: 8%;
+        font-size: 17px;
+    }
+
+    #titre_aside--item
+    {
+        font-size: 20px;
+    }
+
+    .Hôtel_Le_soleil_du_matin
+    {
+        height: 7em;
+        margin-left: 1em;
+        width: 85%;
+        margin-bottom: 2%;
+        box-shadow: rgb(216 214 214) 0px 0px 10px 3px;
+    }
+
+    .Hôtel_Le_soleil_du_matin--photo
+    {
+        width: 143%;
+    }
+
+    .Hôtel_Le_soleil_du_matin--info
+    {
+        margin-right: inherit;
+    }
+
+    .Hôtel_Le_soleil_du_matin--info--titre
+    {
+        margin-top: 8px;
+        margin-bottom: 0%;
+        font-size: 15px;
+    }
+
+    .Hôtel_Le_soleil_du_matin--info--titre--nuit
+    {
+        margin-top: 5px;
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--photo
+    {
+        width: 131%;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--info
+    {
+        margin-right: 1%;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--info--titre
+    {
+        margin-top: 8px;
+        margin-bottom: 0%;
+        font-size: 15px;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--info--titre--nuit
+    {
+        margin-top: 5px;
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+
+
+    .Hôtel_Tout_bleu_et_Blanc--photo
+    {
+        width: 136%;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--info
+    {
+        margin-right: 2%;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--info--titre
+    {
+        margin-top: 8px;
+        margin-bottom: 0%;
+        font-size: 15px;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--info--titre--nuit
+    {
+        margin-top: 5px;
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+
+    .rsv-main__sectionOne--heb--titre
+    {
+        margin-left: 0.9em;
+        margin-top: 2em;
+        font-size: 18px;
     }
 
     .premierblock
     {
         flex-direction: column;
+        width: 100%;
+        margin-bottom: 0%;
+    }
+
+    .Auberge_La_Cannebière
+    {
+        margin-left: 4%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 87%;
+    }
+
+    .Auberge_La_Cannebière--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Auberge_La_Cannebière--info
+    {
+        font-size: 12px;
+    }
+
+    .Auberge_La_Cannebière--info--titre
+    {
+        font-size: 13px;
+    }
+
+    .Auberge_La_Cannebière--etoile
+    {
+        display: flex;
+        width: 69%;
+    }
+
+    .Hôtel_du_port
+    {
+        margin-left: 4%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 87%;
+    }
+
+    .Hôtel_du_port--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Hôtel_du_port--info--titre
+    {
+        font-size: 13px;
+    }
+
+    .Hôtel_du_port--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_du_port--etoile
+    {
+        display: flex;
+        width: 69%;
+    }
+
+    .Hôtel_Les_mouettes
+    {
+        margin-left: 4%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 87%;
+    }
+
+    .Hôtel_Les_mouettes--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Hôtel_Les_mouettes--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_Les_mouettes--info--titre
+    {
+        font-size: 13px;
+    }
+
+    .Hôtel_Les_mouettes--etoile
+    {
+        display: flex;
+        width: 69%;
     }
 
     .deuxiemeblock
     {
         flex-direction: column;
+        width: 100%;
     }
 
-    .rsv-main__sectionOne--pop
+    .Hôtel_de_la_mer
     {
-        width: auto;
+        margin-left: 4%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 87%; 
+    }
+
+    .Hôtel_de_la_mer--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Hôtel_de_la_mer--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_de_la_mer--info--titre
+    {
+        font-size: 13px;
+    }
+
+    .Hôtel_de_la_mer--etoile
+    {
+        display: flex;
+        width: 69%;
+    }
+
+    .Auberge_Le_Panier
+    {
+        margin-left: 4%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 87%; 
+    }
+
+    .Auberge_Le_Panier--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Auberge_Le_Panier--info
+    {
+        font-size: 12px;
+    }
+
+    .Auberge_Le_Panier--info--titre
+    {
+        font-size: 13px;
+    }
+
+    .Auberge_Le_Panier--etoile
+    {
+        display: flex;
+        width: 69%;
+    }
+
+    .Hôtel_chez_Amina
+    {
+        margin-left: 4%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 87%;
+    }
+
+    .Hôtel_chez_Amina--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Hôtel_chez_Amina--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_chez_Amina--info--titre--nuit
+    {
+        font-size: 13px;
+    }
+
+    .Hôtel_chez_Amina--etoile
+    {
+        display: flex;
+        width: 69%;
+    }
+
+    .rsv-main__sectionOne--heb--affi
+    {
+        margin-left: 4%;
+        font-size: 17px;
+    }
+
+    .rsv-main__sectionTwo--activ
+    {
+        margin-top: 0%;
+        margin-bottom: 6%;
+    }
+
+    .rsv-main__sectionTwo--activ--titre
+    {
+        margin-left: 4%;
+        font-size: 19px;
     }
 
     .grosblock
@@ -1035,8 +1578,153 @@ input::placeholder
         flex-direction: column;
     }
 
+    .Vieux_Port
+    {
+        margin-left: 3%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 91%;
+        margin-right: 0%;
+    }
+
+    .Vieux_Port--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Vieux_Port--info
+    {
+        font-size: 15px;
+    }
+
+    .troisiemeblock
+    {
+        margin-right: unset;
+    }
+
+    .Fort_de_Pomègues
+    {
+        margin-left: 3%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 91%;
+        margin-right: 0%
+    }
+
+    .Fort_de_Pomègues--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Fort_de_Pomègues--info
+    {
+        font-size: 15px;
+    }
+
+    .Iles_du_frioul
+    {
+        margin-left: 3%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 91%;
+        margin-right: 0%
+    }
+
+    .Iles_du_frioul--taille--photo
+    {
+        height: 6em; 
+    }
+
+    .Iles_du_frioul--info
+    {
+        font-size: 15px;
+    }
+
+    .Parc_National_des_Calanques
+    {
+        margin-left: 3%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 91%;
+        margin-right: 0%;
+    }
+
+    .Parc_National_des_Calanques--taille--photo
+    {
+        height: 6em; 
+    }
+
+    .Parc_National_des_Calanques--info
+    {
+        font-size: 15px;
+    }
+
+    .Notre_Dame_de_la_Garde
+    {
+        margin-left: 3%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 91%;
+        margin-right: 0%;
+    }
+
+    .Notre_Dame_de_la_Garde--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Notre_Dame_de_la_Garde--info
+    {
+        font-size: 15px;
+    }
+
+    .Parc_Longchamp
+    {
+        margin-left: 3%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 91%;
+        margin-right: 0%;
+    }
+
+    .Parc_Longchamp--taille--photo
+    {
+        height: 6em;
+    }
+
+    .Parc_Longchamp--info
+    {
+        font-size: 15px;
+    }
+
     .rsv-footer
     {
         flex-direction: column;
+        width: 100%;
+    }
+
+    ul
+    {
+        width: 15em;
+        padding-left: 22px;
+        margin: 0%;
+        font-size: 15px;
+    }
+
+    .rsv-footer__listOne
+    {
+        margin-bottom: 0%;
+    }
+
+    .rsv-footer__listTwo
+    {
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+
+    .rsv-footer__listThree
+    {
+        margin-top: 0%;
+        margin-bottom: 6%
     }
 }
