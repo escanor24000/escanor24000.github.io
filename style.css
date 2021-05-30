@@ -3,7 +3,7 @@
     src: url('fonts/Raleway-Light.ttf');
 }
 
-h1, p, li, h2, input::placeholder, .rsv-header__nav--menu--itm--heb
+h1, p, li, h2, input::placeholder, .rsv-header__nav--menu--itm--heb, .rsv-header__nav--menu--ins
 {
     font-family: 'Raleway', sans-serif ;
 }
@@ -72,12 +72,6 @@ img
     flex-grow: 1;
 }
 
-.rsv-header__nav--menu
-{
-   display:flex;
-   margin-top: 09%;
-}
-
 .rsv-header__nav--menu--heb--act
 {
     display: flex;
@@ -134,6 +128,11 @@ img
     font-weight: bold;
 }
 
+.rsv-header__sous--menu
+{
+    margin-bottom: 2%;
+}
+
 .rsv-header__sous--menu--titre
 {
     font-size: 22px;
@@ -142,18 +141,6 @@ img
 .rsv-header__sous--menu--texte
 {
     font-weight: 600; 
-}
-
-.rsv-header__form
-{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2em;
-}
-
-.rsv-header__sous--menu
-{
-    margin-bottom: 2%;
 }
 
 .rsv-header__form__recherche
@@ -358,6 +345,12 @@ input::placeholder
     font-weight: bold;
 }
 
+.rsv-main__sectionOne
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .rsv-main__sectionOne--heb
 {
     width: 72%;
@@ -371,12 +364,6 @@ input::placeholder
     margin-top: 2em;
     font-size: 22px;
     font-weight: bold;
-}
-
-.rsv-main__sectionOne
-{
-    display: flex;
-    flex-direction: row;
 }
 
 .premierblock
@@ -666,7 +653,7 @@ input::placeholder
     margin-right: 5px;
 }
 
-.Hôtel_Le_soleil_du_matin
+.rsv-aside__conteneur
 {
     display: flex;
     border: 4px solid white;
@@ -710,19 +697,6 @@ input::placeholder
     margin-bottom: 19%;
 }
 
-.Au_coeur_de_l_eau_Chambres_d_hôtes
-{
-    display: flex;
-    border: 4px solid white;
-    border-radius: 1em;
-    box-shadow: rgb(216 214 214) 0px 0px 22px 11px;
-    margin-left: 2em;
-    margin-bottom: 2em;
-    background-color: white;
-    height: 20%;
-    width: 83%;
-}
-
 .Au_coeur_de_l_eau_Chambres_d_hôtes--photo
 {
     width: 82%;
@@ -751,18 +725,6 @@ input::placeholder
 .Au_coeur_de_l_eau_Chambres_d_hôtes--info--titre--nuit
 {
     margin-bottom: 11%;
-}
-
-.Hôtel_Tout_bleu_et_Blanc
-{
-    display: flex;
-    border: 4px solid white;
-    border-radius: 1em;
-    box-shadow: rgb(216 214 214) 0px 0px 22px 11px;
-    margin-left: 2em;
-    background-color: white;
-    width: 83%;
-    height: 20%;
 }
 
 .Hôtel_Tout_bleu_et_Blanc--photo
@@ -1014,7 +976,7 @@ input::placeholder
     margin-bottom: 1em;
 }
 
-@media screen and (max-device-width: 480px)
+@media screen and (max-width: 480px)
 {
     .bluestar
     {
@@ -1068,11 +1030,6 @@ input::placeholder
         padding-left: 32px;
         padding-right: 50px;
         padding-top: 15%;
-    }
-
-    .rsv-header__nav--menu
-    {
-        flex-direction: column-reverse;
     }
 
     .rsv-header__nav--menu--itm a
@@ -1278,7 +1235,7 @@ input::placeholder
         font-size: 20px;
     }
 
-    .Hôtel_Le_soleil_du_matin
+    .rsv-aside__conteneur
     {
         height: 7em;
         margin-left: 1em;
@@ -1729,18 +1686,18 @@ input::placeholder
     }
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 768px)
+@media screen and (min-width: 481px) and (max-width: 768px)
 {
     .bluestar
     {
-        width: 7%;
-        font-size: 11px;
+        width: 6%;
+        font-size: 13px;
     }
 
     .greystar
     {
-        font-size: 11px;
-        width: 7%;
+        font-size: 13px;
+        width: 6%;
     }
 
     .rsv-header
@@ -1782,11 +1739,6 @@ input::placeholder
         padding-left: 32px;
         padding-right: 50px;
         padding-top: 15%;
-    }
-
-    .rsv-header__nav--menu
-    {
-        flex-direction: column-reverse;
     }
 
     .rsv-header__nav--menu--itm a
@@ -1985,7 +1937,7 @@ input::placeholder
 
     .rsv-main__sectionOne--pop
     {
-        width: 83%;
+        width: 100%;
         border-radius: initial;
         margin-left: 0%;
     }
@@ -2000,6 +1952,7 @@ input::placeholder
     {
         margin-top: 8%;
         font-size: 17px;
+        width: 71%;
     }
 
     #titre_aside--item
@@ -2007,11 +1960,11 @@ input::placeholder
         font-size: 20px;
     }
 
-    .Hôtel_Le_soleil_du_matin
+    .rsv-aside__conteneur
     {
         height: 7em;
         margin-left: 1em;
-        width: 80%;
+        width: 88%;
         margin-bottom: 2%;
         box-shadow: rgb(216 214 214) 0px 0px 10px 3px;
     }
@@ -2031,14 +1984,14 @@ input::placeholder
     {
         margin-top: 8px;
         margin-bottom: 0%;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .Hôtel_Le_soleil_du_matin--info--titre--nuit
     {
         margin-top: 5px;
-        margin-bottom: 22px;
-        font-size: 13px;
+        margin-bottom: 38px;
+        font-size: 14px;
     }
 
     .Hôtel_Le_soleil_du_matin--etoile
@@ -2068,7 +2021,7 @@ input::placeholder
     {
         margin-top: 5px;
         margin-bottom: 22px;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .Au_coeur_de_l_eau_Chambres_d_hôtes--etoile
@@ -2091,14 +2044,14 @@ input::placeholder
     {
         margin-top: 8px;
         margin-bottom: 0%;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .Hôtel_Tout_bleu_et_Blanc--info--titre--nuit
     {
         margin-top: 5px;
-        margin-bottom: 23px;
-        font-size: 13px;
+        margin-bottom: 40px;
+        font-size: 14px;
     }
 
     .Hôtel_Tout_bleu_et_Blanc--etoile
@@ -2123,15 +2076,16 @@ input::placeholder
 
     .Auberge_La_Cannebière
     {
-        margin-left: 4%;
-        margin-bottom: 3%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 65%;
+        width: 97%;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 3%;
     }
 
     .Auberge_La_Cannebière--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Auberge_La_Cannebière--info
@@ -2141,7 +2095,12 @@ input::placeholder
 
     .Auberge_La_Cannebière--info--titre
     {
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .Auberge_La_Cannebière--info--nuit
+    {
+        font-size: 14px;
     }
 
     .Auberge_La_Cannebière--etoile
@@ -2152,20 +2111,26 @@ input::placeholder
 
     .Hôtel_du_port
     {
-        margin-left: 4%;
+        margin-left: 0%;
+        margin-right: 0%;
         margin-bottom: 3%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 65%;
+        width: 97%;
     }
 
     .Hôtel_du_port--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Hôtel_du_port--info--titre
     {
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .Hôtel_du_port--info--titre--nuit
+    {
+        font-size: 14px;
     }
 
     .Hôtel_du_port--info
@@ -2181,15 +2146,16 @@ input::placeholder
 
     .Hôtel_Les_mouettes
     {
-        margin-left: 4%;
+        margin-left: 0%;
+        margin-right: 0%;
         margin-bottom: 3%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 65%;
+        width: 97%;
     }
 
     .Hôtel_Les_mouettes--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Hôtel_Les_mouettes--info
@@ -2199,7 +2165,12 @@ input::placeholder
 
     .Hôtel_Les_mouettes--info--titre
     {
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .Hôtel_Les_mouettes--info--titre--nuit
+    {
+        font-size: 14px;
     }
 
     .Hôtel_Les_mouettes--etoile
@@ -2216,15 +2187,16 @@ input::placeholder
 
     .Hôtel_de_la_mer
     {
-        margin-left: 4%;
+        margin-left: 0%;
+        margin-right: 0%;
         margin-bottom: 3%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 65%; 
+        width: 97%; 
     }
 
     .Hôtel_de_la_mer--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Hôtel_de_la_mer--info
@@ -2234,7 +2206,12 @@ input::placeholder
 
     .Hôtel_de_la_mer--info--titre
     {
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .Hôtel_de_la_mer--info--titre--nuit
+    {
+        font-size: 14px;
     }
 
     .Hôtel_de_la_mer--etoile
@@ -2245,15 +2222,16 @@ input::placeholder
 
     .Auberge_Le_Panier
     {
-        margin-left: 4%;
+        margin-left: 0%;
+        margin-right: 0%;
         margin-bottom: 3%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 65%; 
+        width: 97%; 
     }
 
     .Auberge_Le_Panier--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Auberge_Le_Panier--info
@@ -2263,7 +2241,12 @@ input::placeholder
 
     .Auberge_Le_Panier--info--titre
     {
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .Auberge_Le_Panier--info--titre--nuit
+    {
+        font-size: 14px;
     }
 
     .Auberge_Le_Panier--etoile
@@ -2274,15 +2257,16 @@ input::placeholder
 
     .Hôtel_chez_Amina
     {
-        margin-left: 4%;
+        margin-left: 0%;
+        margin-right: 0%;
         margin-bottom: 3%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 65%;
+        width: 97%;
     }
 
     .Hôtel_chez_Amina--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Hôtel_chez_Amina--info
@@ -2292,7 +2276,12 @@ input::placeholder
 
     .Hôtel_chez_Amina--info--titre--nuit
     {
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .Hôtel_chez_Amina--info--titre--nuit
+    {
+        font-size: 14px;
     }
 
     .Hôtel_chez_Amina--etoile
@@ -2326,16 +2315,16 @@ input::placeholder
 
     .Vieux_Port
     {
-        margin-left: 3%;
+        margin-left: 0%;
         margin-bottom: 7%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 68%;
+        width: 100%;
         margin-right: 0%;
     }
 
     .Vieux_Port--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Vieux_Port--info
@@ -2350,16 +2339,16 @@ input::placeholder
 
     .Fort_de_Pomègues
     {
-        margin-left: 3%;
+        margin-left: 0%;
         margin-bottom: 7%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 68%;
+        width: 100%;
         margin-right: 0%
     }
 
     .Fort_de_Pomègues--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Fort_de_Pomègues--info
@@ -2369,16 +2358,16 @@ input::placeholder
 
     .Iles_du_frioul
     {
-        margin-left: 3%;
+        margin-left: 0%;
         margin-bottom: 7%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 68%;
+        width: 100%;
         margin-right: 0%
     }
 
     .Iles_du_frioul--taille--photo
     {
-        height: 6em; 
+        height: 8em; 
     }
 
     .Iles_du_frioul--info
@@ -2388,16 +2377,16 @@ input::placeholder
 
     .Parc_National_des_Calanques
     {
-        margin-left: 3%;
+        margin-left: 0%;
         margin-bottom: 7%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 68%;
+        width: 100%;
         margin-right: 0%;
     }
 
     .Parc_National_des_Calanques--taille--photo
     {
-        height: 6em; 
+        height: 8em; 
     }
 
     .Parc_National_des_Calanques--info
@@ -2407,16 +2396,16 @@ input::placeholder
 
     .Notre_Dame_de_la_Garde
     {
-        margin-left: 3%;
+        margin-left: 0%;
         margin-bottom: 7%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 68%;
+        width: 100%;
         margin-right: 0%;
     }
 
     .Notre_Dame_de_la_Garde--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Notre_Dame_de_la_Garde--info
@@ -2426,16 +2415,16 @@ input::placeholder
 
     .Parc_Longchamp
     {
-        margin-left: 3%;
+        margin-left: 0%;
         margin-bottom: 7%;
         box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
-        width: 68%;
+        width: 100%;
         margin-right: 0%;
     }
 
     .Parc_Longchamp--taille--photo
     {
-        height: 6em;
+        height: 8em;
     }
 
     .Parc_Longchamp--info
@@ -2446,7 +2435,7 @@ input::placeholder
     .rsv-footer
     {
         flex-direction: column;
-        width: 72%;
+        width: 100%;
     }
 
     ul
@@ -2474,347 +2463,1553 @@ input::placeholder
         margin-bottom: 6%
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1000px)
+@media screen and (min-width: 769px) and (max-width: 1000px)
 {
     .bluestar
     {
-        font-size: 14px;
         width: 5%;
+        font-size: 16px;
     }
 
     .greystar
     {
-        font-size: 14px;
-        width: 5%
+        font-size: 16px;
+        width: 5%;
     }
 
     .rsv-header
     {
-        flex-wrap: unset;
+        width: 100%;
+        flex-wrap: nowrap;
     }
 
     .rsv-header__logo
     {
-        width: 43%;
+        width: 76%;
+    }
+
+    .rsv-header__logo--image
+    {
+       width: 7em;
+    }
+
+    .rsv-header__nav--menu--itm--heb a
+    {
+    padding-bottom: 9px;
+    }
+
+    .rsv-header__nav--menu--itm--heb a:hover
+    {
+            color: #0065fc;
+            border-bottom: 1px solid #0065fc;
+            border-top: none;
+            padding-left: 19px;
+            padding-right: 19px;
+    }
+
+    .rsv-header__nav--menu--itm--act a:hover
+    {
+        color: #0065fc;
+        border-bottom: 1px solid #0065fc;
+        border-top: none;
+        padding-bottom: 9px;
+        padding-left: 32px;
+        padding-right: 50px;
+        padding-top: 15%;
+    }
+
+    .rsv-header__nav--menu--itm a
+    {
+        padding-top: 14px;
+        padding-left: 34px;
+    }
+
+    .rsv-header__nav--menu--ins a
+    {
+        padding: 0%;
     }
 
     .rsv-header__nav--menu--heb--act
     {
-        order: unset;
-        margin-left: 0%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        margin-left: 3em;
     }
 
-    .rsv-filtre
+    .bouton
     {
-        flex-flow: wrap;
-        align-items: unset;
-        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 3%; 
     }
 
-    .rsv-filtre--titre
+    .rsv-header__nav--menu--ins
     {
-        width: 12%;
+        margin-top: 39%;
     }
 
-    .rsv-filtre__eco
+    .rsv-header__sous--menu--titre
     {
-        width: 54%;
+        font-size: 19px;
+        width: 99%;
     }
 
-    .rsv-filtre__fam
+    .rsv-header__sous--menu--texte
     {
-        margin-left: 4%;
+        width: 20em;
+        margin-bottom: 2em;
+        font-size: 90%;
+        font-weight: bolder;
     }
 
-    .rsv-filtre__rom
+    .rsv-header__recherche--item
     {
-        margin-top: unset;
-        margin-bottom: unset;
-        margin-left: 2%;
+        padding-right: 1%;
     }
 
-    .rsv-filtre__ani
-    {
-        margin-top: 2%;
-    }
-
-    .rsv-main__sectionOne--pop
-    {
-        width: 87%;
-    }
-
-    .titre_aside--popu
+    #recherche
     {
         width: 19em;
     }
 
-    .Hôtel_Le_soleil_du_matin
+    .rsv-header__recherche--bouton
+    {
+        width: 7%;
+    }
+
+    .rsv-header__recherche--bouton--corp
+    {
+        width: 4em;
+        border-radius: 1em;
+        display: none;
+    }
+
+    .rsv-header__recherche--bouton--corp--logo
+    {
+        display: block;
+    }
+
+    .filters_icons
+    {
+        width: 44px;
+        margin-right: 10px;
+        height: 44px;
+        font-size: 14px;
+        border-radius: 3em;
+    }
+
+    .rsv-filtre
+    {
+        flex-direction: column;
+        align-items: start
+    }
+
+    .rsv-filtre--eco--fam
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .rsv-filtre__eco
+    {
+        margin-left: 0%;
+        width: 53%;
+        height: 41px;
+    }
+
+    .rsv-filtre__eco--itm--money
+    {
+        width: 56px;
+        height: 42px;
+    }
+
+    .rsv-filtre__eco--title
+    {
+        font-size: 10px;
+    }
+
+    .rsv-filtre__fam
+    {
+        margin-left: 3%;
+        width: 53%;
+        height: 41px;
+    }
+
+    .rsv-filtre__fam--item--perso
+    {
+        width: 43px;
+        height: 42px;
+    }
+
+    .rsv-filtre__fam--title
+    {
+        font-size: 10px;
+        margin-right: 12px;
+    }
+
+    .rsv-filtre__rom
+    {
+        margin-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 41px;
+    }
+
+    .rsv-filtre__rom--title
+    {
+        font-size: 10px;
+        margin-right: 12px;
+    }
+
+    .rsv-filtre__ani
+    {
+        margin-left: 0%;
+        height: 41px;
+    }
+
+    .rsv-filtre__ani--title
+    {
+        font-size: 10px;
+    }
+
+    .rsv-information
+    {
+        width: 100%;
+        align-items: baseline;
+    }
+
+    .rsv-information--item
+    {
+        font-size: 12px;
+        margin-right: 11px;
+        border: 1px solid gainsboro;
+        width: 2em;
+        height: 2em;
+    }
+
+    .rsv-information--texte
+    {
+        font-weight: unset;
+        font-size: 14px;
+    }
+
+    section
+    {
+        flex-direction: column;
+    }
+
+    .rsv-main__sectionOne
+    {
+        flex-direction: column-reverse;
+    }
+
+    .rsv-main__sectionOne--heb
+    {
+        background-color: white;
+        width: 100%;
+    }
+ 
+
+    .rsv-main__sectionOne--pop
+    {
+        width: 100%;
+        border-radius: initial;
+        margin-left: 0%;
+    }
+
+    .titre_aside
+    {
+      align-items: baseline;
+      width: 99%;  
+    }
+
+    .titre_aside--popu
+    {
+        margin-top: 5%;
+        font-size: 19px;
+        width: 71%;
+    }
+
+    #titre_aside--item
+    {
+        font-size: 20px;
+    }
+
+    .rsv-aside__conteneur
     {
         height: 9em;
-        margin-left: 3em;
+        margin-left: 1em;
+        width: 88%;
+        margin-bottom: 2%;
+        box-shadow: rgb(216 214 214) 0px 0px 10px 3px;
+    }
+
+    .Hôtel_Le_soleil_du_matin--photo
+    {
+        max-width: 31%;
+        width: unset;
+    }
+
+    .Hôtel_Le_soleil_du_matin--info
+    {
+        margin-right: inherit;
     }
 
     .Hôtel_Le_soleil_du_matin--info--titre
     {
+        margin-top: 8px;
+        margin-bottom: 0%;
         font-size: 18px;
     }
 
     .Hôtel_Le_soleil_du_matin--info--titre--nuit
     {
+        margin-top: 5px;
+        margin-bottom: 64px;
         font-size: 16px;
-        margin-bottom: 23%;
+    }
+
+    .Hôtel_Le_soleil_du_matin--etoile
+    {
+        width: 75%;
+        font-size: 21px;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--photo
+    {
+        width: 131%;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--info
+    {
+        margin-right: 1%;
     }
 
     .Au_coeur_de_l_eau_Chambres_d_hôtes--info--titre
     {
+        margin-top: 8px;
+        margin-bottom: 0%;
         font-size: 18px;
     }
 
     .Au_coeur_de_l_eau_Chambres_d_hôtes--info--titre--nuit
     {
+        margin-top: 5px;
+        margin-bottom: 64px;
         font-size: 16px;
-        margin-bottom: 15%;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--etoile
+    {
+        width: 75%;
+        font-size: 21px;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--photo
+    {
+        width: 136%;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--info
+    {
+        margin-right: 2%;
     }
 
     .Hôtel_Tout_bleu_et_Blanc--info--titre
     {
+        margin-top: 8px;
+        margin-bottom: 0%;
         font-size: 18px;
     }
 
     .Hôtel_Tout_bleu_et_Blanc--info--titre--nuit
     {
+        margin-top: 5px;
+        margin-bottom: 64px;
         font-size: 16px;
-        margin-bottom: 23%;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--etoile
+    {
+        width: 75%;
+        font-size: 21px;
     }
 
     .rsv-main__sectionOne--heb--titre
     {
-        margin-left: 2.7em;
+        margin-left: 0.9em;
+        margin-top: 2em;
+        font-size: 19px;
+    }
+
+    .premierblock
+    {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0%;
     }
 
     .Auberge_La_Cannebière
     {
-        margin-left: 11%;
-        width: 59%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 3%;
     }
 
     .Auberge_La_Cannebière--taille--photo
     {
-        height: 8em;
+        height: 14em;
+    }
+
+    .Auberge_La_Cannebière--info
+    {
+        font-size: 12px;
     }
 
     .Auberge_La_Cannebière--info--titre
     {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .Auberge_La_Cannebière--info--nuit
     {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .Auberge_La_Cannebière--etoile
     {
-        width: 84%;
+        display: flex;
+        width: 60%;
     }
 
     .Hôtel_du_port
     {
-        margin-left: 11%;
-        width: 59%; 
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%;
     }
 
     .Hôtel_du_port--taille--photo
     {
-        height: 8em;
+        height: 14em;
     }
 
     .Hôtel_du_port--info--titre
     {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .Hôtel_du_port--info--titre--nuit
     {
-        font-size: 15px;
+        font-size: 16px;
     }
 
-    .Hôtel_du_port--etoile
-    {
-        width: 83%;
-    }
-
-    .Hôtel_Les_mouettes
-    {
-        margin-left: 11%;
-        width: 59%;
-    }
-
-    .Hôtel_Les_mouettes--taille--photo
-    {
-        height: 8em;
-    }
-
-    .Hôtel_Les_mouettes--info--titre
-    {
-        font-size: 15px;
-    }
-
-    .Hôtel_Les_mouettes--info--titre--nuit
-    {
-        font-size: 15px;
-    }
-
-    .Hôtel_Les_mouettes--etoile
-    {
-        width: 83%;
-    }
-
-    .Hôtel_de_la_mer
-    {
-        margin-left: 11%;
-        width: 59%;   
-    }
-
-    .Hôtel_de_la_mer--taille--photo
-    {
-        height: 8em;
-    }
-
-    .Hôtel_de_la_mer--info--titre
-    {
-        font-size: 15px;
-    }
-
-    .Hôtel_de_la_mer--info--titre--nuit
-    {
-        font-size: 15px;
-    }
-
-    .Hôtel_de_la_mer--etoile
-    {
-        width: 83%;
-    }
-
-    .Auberge_Le_Panier
-    {
-        margin-left: 11%;
-        width: 59%;    
-    }
-
-    .Auberge_Le_Panier--taille--photo
-    {
-        height: 8em;
-    }
-
-    .Auberge_Le_Panier--info--titre
-    {
-        font-size: 15px;
-    }
-
-    .Auberge_Le_Panier--info--titre--nuit
-    {
-        font-size: 15px;
-    }
-
-    .Auberge_Le_Panier--etoile
-    {
-        width: 83%;
-    }
-
-    .Hôtel_chez_Amina
-    {
-        margin-left: 11%;
-        width: 59%;  
-    }
-
-    .Hôtel_chez_Amina--taille--photo
-    {
-        height: 8em;
-    }
-
-    .Hôtel_chez_Amina--info--titre
+    .Hôtel_du_port--info
     {
         font-size: 16px;
     }
 
+    .Hôtel_du_port--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .Hôtel_Les_mouettes
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%;
+    }
+
+    .Hôtel_Les_mouettes--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Hôtel_Les_mouettes--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_Les_mouettes--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Hôtel_Les_mouettes--info--titre--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Hôtel_Les_mouettes--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .deuxiemeblock
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Hôtel_de_la_mer
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%; 
+    }
+
+    .Hôtel_de_la_mer--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Hôtel_de_la_mer--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_de_la_mer--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Hôtel_de_la_mer--info--titre--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Hôtel_de_la_mer--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .Auberge_Le_Panier
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%; 
+    }
+
+    .Auberge_Le_Panier--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Auberge_Le_Panier--info
+    {
+        font-size: 12px;
+    }
+
+    .Auberge_Le_Panier--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Auberge_Le_Panier--info--titre--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Auberge_Le_Panier--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .Hôtel_chez_Amina
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%;
+    }
+
+    .Hôtel_chez_Amina--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Hôtel_chez_Amina--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_chez_Amina--info--titre
+    {
+        font-size: 18px;
+    }
+
     .Hôtel_chez_Amina--info--titre--nuit
     {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .Hôtel_chez_Amina--etoile
     {
-        width: 83%;
+        display: flex;
+        width: 60%;
     }
-    
+
     .rsv-main__sectionOne--heb--affi
     {
-        margin-left: 2.7em;
+        margin-left: 4%;
+        font-size: 17px;
+    }
+
+    .rsv-main__sectionTwo--activ
+    {
+        margin-top: 0%;
+        margin-bottom: 6%;
+    }
+
+    .rsv-main__sectionTwo--activ--titre
+    {
+        margin-left: 4%;
+        font-size: 17px;
+    }
+
+    .grosblock
+    {
+        flex-direction: column;
     }
 
     .Vieux_Port
     {
-        margin-left: 9%;
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%;
     }
 
     .Vieux_Port--taille--photo
     {
-        height: 11em;
+        height: 13em;
+    }
+
+    .Vieux_Port--info
+    {
+        font-size: 15px;
+    }
+
+    .troisiemeblock
+    {
+        margin-right: unset;
     }
 
     .Fort_de_Pomègues
     {
-        margin-left: 9%;
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%
     }
 
     .Fort_de_Pomègues--taille--photo
     {
-        height: 11em;
+        height: 13em;
+    }
+
+    .Fort_de_Pomègues--info
+    {
+        font-size: 15px;
     }
 
     .Iles_du_frioul
     {
-        margin-left: 9%;
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%
     }
 
     .Iles_du_frioul--taille--photo
     {
-        height: 11em;
+        height: 13em; 
+    }
+
+    .Iles_du_frioul--info
+    {
+        font-size: 15px;
     }
 
     .Parc_National_des_Calanques
     {
-        margin-left: 9%;
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%;
     }
 
     .Parc_National_des_Calanques--taille--photo
     {
-        height: 11em;
+        height: 13em; 
+    }
+
+    .Parc_National_des_Calanques--info
+    {
+        font-size: 15px;
     }
 
     .Notre_Dame_de_la_Garde
     {
-        margin-left: 9%;
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%;
     }
 
     .Notre_Dame_de_la_Garde--taille--photo
     {
-        height: 11em;
+        height: 13em;
+    }
+
+    .Notre_Dame_de_la_Garde--info
+    {
+        font-size: 15px;
     }
 
     .Parc_Longchamp
     {
-        margin-left: 9%;
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%;
     }
 
     .Parc_Longchamp--taille--photo
     {
-        height: 11em;
+        height: 13em;
+    }
+
+    .Parc_Longchamp--info
+    {
+        font-size: 15px;
     }
 
     .rsv-footer
     {
-        width: 87%;
+        flex-direction: column;
+        width: 100%;
     }
+
+    ul
+    {
+        width: 15em;
+        padding-left: 22px;
+        margin: 0%;
+        font-size: 16px;
+    }
+
+    .rsv-footer__listOne
+    {
+        margin-bottom: 0%;
+    }
+
+    .rsv-footer__listTwo
+    {
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+
+    .rsv-footer__listThree
+    {
+        margin-top: 0%;
+        margin-bottom: 6%
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px)
+{
+    .bluestar
+    {
+        width: 4%;
+        font-size: 18px;
+    }
+
+    .greystar
+    {
+        font-size: 18px;
+        width: 4%;
+    }
+
+    .rsv-header
+    {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .rsv-header__logo
+    {
+        width: 76%;
+    }
+
+    .rsv-header__logo--image
+    {
+       width: 7em;
+    }
+
+    .rsv-header__nav--menu--itm--heb a
+    {
+    padding-bottom: 9px;
+    }
+
+    .rsv-header__nav--menu--itm--heb a:hover
+    {
+            color: #0065fc;
+            border-bottom: 1px solid #0065fc;
+            border-top: none;
+            padding-left: 19px;
+            padding-right: 19px;
+    }
+
+    .rsv-header__nav--menu--itm--act a:hover
+    {
+        color: #0065fc;
+        border-bottom: 1px solid #0065fc;
+        border-top: none;
+        padding-bottom: 9px;
+        padding-left: 32px;
+        padding-right: 50px;
+        padding-top: 15%;
+    }
+
+    .rsv-header__nav--menu--itm a
+    {
+        padding-top: 14px;
+        padding-left: 34px;
+    }
+
+    .rsv-header__nav--menu--ins a
+    {
+        padding: 0%;
+    }
+
+    .rsv-header__nav--menu--heb--act
+    {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        margin-left: 3em;
+    }
+
+    .bouton
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 3%; 
+    }
+
+    .rsv-header__nav--menu--ins
+    {
+        margin-top: 39%;
+    }
+
+    .rsv-header__sous--menu--titre
+    {
+        font-size: 19px;
+        width: 99%;
+    }
+
+    .rsv-header__sous--menu--texte
+    {
+        width: 20em;
+        margin-bottom: 2em;
+        font-size: 90%;
+        font-weight: bolder;
+    }
+
+    .rsv-header__recherche--item
+    {
+        padding-right: 1%;
+    }
+
+    #recherche
+    {
+        width: 19em;
+    }
+
+    .rsv-header__recherche--bouton
+    {
+        width: 7%;
+    }
+
+    .rsv-header__recherche--bouton--corp
+    {
+        width: 4em;
+        border-radius: 1em;
+        display: none;
+    }
+
+    .rsv-header__recherche--bouton--corp--logo
+    {
+        display: block;
+    }
+
+    .filters_icons
+    {
+        width: 44px;
+        margin-right: 10px;
+        height: 44px;
+        font-size: 14px;
+        border-radius: 3em;
+    }
+
+    .rsv-filtre--eco--fam
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 4%;
+    }
+
+    .rsv-filtre__eco
+    {
+        margin-left: 1%;
+        width: 53%;
+        height: 41px;
+    }
+
+    .rsv-filtre__eco--itm--money
+    {
+        width: 56px;
+        height: 42px;
+    }
+
+    .rsv-filtre__eco--title
+    {
+        font-size: 10px;
+    }
+
+    .rsv-filtre__fam
+    {
+        margin-left: 3%;
+        width: 53%;
+        height: 41px;
+    }
+
+    .rsv-filtre__fam--item--perso
+    {
+        width: 43px;
+        height: 42px;
+    }
+
+    .rsv-filtre__fam--title
+    {
+        font-size: 10px;
+        margin-right: 12px;
+    }
+
+    .rsv-filtre__rom
+    {
+        margin-left: 1%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 41px;
+    }
+
+    .rsv-filtre__rom--title
+    {
+        font-size: 10px;
+        margin-right: 12px;
+    }
+
+    .rsv-filtre__ani
+    {
+        margin-left: 1%;
+        height: 41px;
+    }
+
+    .rsv-filtre__ani--title
+    {
+        font-size: 10px;
+    }
+
+    .rsv-information
+    {
+        width: 100%;
+        align-items: baseline;
+    }
+
+    .rsv-information--item
+    {
+        font-size: 12px;
+        margin-right: 11px;
+        border: 1px solid gainsboro;
+        width: 2em;
+        height: 2em;
+    }
+
+    .rsv-information--texte
+    {
+        font-weight: unset;
+        font-size: 14px;
+    }
+
+    section
+    {
+        flex-direction: column;
+    }
+
+    .rsv-main__sectionOne
+    {
+        flex-direction: column-reverse;
+    }
+
+    .rsv-main__sectionOne--heb
+    {
+        background-color: white;
+        width: 100%;
+    }
+ 
+
+    .rsv-main__sectionOne--pop
+    {
+        width: 100%;
+        border-radius: initial;
+        margin-left: 0%;
+    }
+
+    .titre_aside
+    {
+      align-items: baseline;
+      width: 99%;  
+    }
+
+    .titre_aside--popu
+    {
+        margin-top: 5%;
+        font-size: 19px;
+        width: 71%;
+    }
+
+    #titre_aside--item
+    {
+        font-size: 20px;
+    }
+
+    .rsv-aside__conteneur
+    {
+        height: 9em;
+        margin-left: 1em;
+        width: 88%;
+        margin-bottom: 2%;
+        box-shadow: rgb(216 214 214) 0px 0px 10px 3px;
+    }
+
+    .Hôtel_Le_soleil_du_matin--photo
+    {
+        max-width: 31%;
+        width: unset;
+    }
+
+    .Hôtel_Le_soleil_du_matin--info
+    {
+        margin-right: inherit;
+    }
+
+    .Hôtel_Le_soleil_du_matin--info--titre
+    {
+        margin-top: 8px;
+        margin-bottom: 0%;
+        font-size: 18px;
+    }
+
+    .Hôtel_Le_soleil_du_matin--info--titre--nuit
+    {
+        margin-top: 5px;
+        margin-bottom: 64px;
+        font-size: 16px;
+    }
+
+    .Hôtel_Le_soleil_du_matin--etoile
+    {
+        width: 75%;
+        font-size: 21px;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--photo
+    {
+        width: 131%;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--info
+    {
+        margin-right: 1%;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--info--titre
+    {
+        margin-top: 8px;
+        margin-bottom: 0%;
+        font-size: 18px;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--info--titre--nuit
+    {
+        margin-top: 5px;
+        margin-bottom: 64px;
+        font-size: 16px;
+    }
+
+    .Au_coeur_de_l_eau_Chambres_d_hôtes--etoile
+    {
+        width: 75%;
+        font-size: 21px;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--photo
+    {
+        width: 136%;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--info
+    {
+        margin-right: 2%;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--info--titre
+    {
+        margin-top: 8px;
+        margin-bottom: 0%;
+        font-size: 18px;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--info--titre--nuit
+    {
+        margin-top: 5px;
+        margin-bottom: 64px;
+        font-size: 16px;
+    }
+
+    .Hôtel_Tout_bleu_et_Blanc--etoile
+    {
+        width: 75%;
+        font-size: 21px;
+    }
+
+    .rsv-main__sectionOne--heb--titre
+    {
+        margin-left: 0.9em;
+        margin-top: 2em;
+        font-size: 19px;
+    }
+
+    .premierblock
+    {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0%;
+    }
+
+    .Auberge_La_Cannebière
+    {
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 3%;
+    }
+
+    .Auberge_La_Cannebière--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Auberge_La_Cannebière--info
+    {
+        font-size: 12px;
+    }
+
+    .Auberge_La_Cannebière--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Auberge_La_Cannebière--info--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Auberge_La_Cannebière--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .Hôtel_du_port
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%;
+    }
+
+    .Hôtel_du_port--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Hôtel_du_port--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Hôtel_du_port--info--titre--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Hôtel_du_port--info
+    {
+        font-size: 16px;
+    }
+
+    .Hôtel_du_port--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .Hôtel_Les_mouettes
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%;
+    }
+
+    .Hôtel_Les_mouettes--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Hôtel_Les_mouettes--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_Les_mouettes--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Hôtel_Les_mouettes--info--titre--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Hôtel_Les_mouettes--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .deuxiemeblock
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Hôtel_de_la_mer
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%; 
+    }
+
+    .Hôtel_de_la_mer--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Hôtel_de_la_mer--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_de_la_mer--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Hôtel_de_la_mer--info--titre--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Hôtel_de_la_mer--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .Auberge_Le_Panier
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%; 
+    }
+
+    .Auberge_Le_Panier--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Auberge_Le_Panier--info
+    {
+        font-size: 12px;
+    }
+
+    .Auberge_Le_Panier--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Auberge_Le_Panier--info--titre--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Auberge_Le_Panier--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .Hôtel_chez_Amina
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 97%;
+    }
+
+    .Hôtel_chez_Amina--taille--photo
+    {
+        height: 14em;
+    }
+
+    .Hôtel_chez_Amina--info
+    {
+        font-size: 12px;
+    }
+
+    .Hôtel_chez_Amina--info--titre
+    {
+        font-size: 18px;
+    }
+
+    .Hôtel_chez_Amina--info--titre--nuit
+    {
+        font-size: 16px;
+    }
+
+    .Hôtel_chez_Amina--etoile
+    {
+        display: flex;
+        width: 60%;
+    }
+
+    .rsv-main__sectionOne--heb--affi
+    {
+        margin-left: 4%;
+        font-size: 18px;
+    }
+
+    .rsv-main__sectionTwo--activ
+    {
+        margin-top: 0%;
+        margin-bottom: 6%;
+    }
+
+    .rsv-main__sectionTwo--activ--titre
+    {
+        margin-left: 4%;
+        font-size: 19px;
+    }
+
+    .grosblock
+    {
+        flex-direction: column;
+    }
+
+    .Vieux_Port
+    {
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .Vieux_Port--taille--photo
+    {
+        height: 13em;
+    }
+
+    .Vieux_Port--info
+    {
+        font-size: 18px;
+    }
+
+    .troisiemeblock
+    {
+        margin-right: unset;
+    }
+
+    .Fort_de_Pomègues
+    {
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%
+    }
+
+    .Fort_de_Pomègues--taille--photo
+    {
+        height: 13em;
+    }
+
+    .Fort_de_Pomègues--info
+    {
+        font-size: 18px;
+    }
+
+    .Iles_du_frioul
+    {
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%
+    }
+
+    .Iles_du_frioul--taille--photo
+    {
+        height: 13em; 
+    }
+
+    .Iles_du_frioul--info
+    {
+        font-size: 18px;
+    }
+
+    .Parc_National_des_Calanques
+    {
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .Parc_National_des_Calanques--taille--photo
+    {
+        height: 13em; 
+    }
+
+    .Parc_National_des_Calanques--info
+    {
+        font-size: 18px;
+    }
+
+    .Notre_Dame_de_la_Garde
+    {
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .Notre_Dame_de_la_Garde--taille--photo
+    {
+        height: 13em;
+    }
+
+    .Notre_Dame_de_la_Garde--info
+    {
+        font-size: 18px;
+    }
+
+    .Parc_Longchamp
+    {
+        margin-left: 0%;
+        margin-bottom: 7%;
+        box-shadow: rgb(216 214 214) 0px 0px 18px 0px;
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .Parc_Longchamp--taille--photo
+    {
+        height: 13em;
+    }
+
+    .Parc_Longchamp--info
+    {
+        font-size: 18px;
+    }
+
+    .rsv-footer
+    {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    ul
+    {
+        width: 15em;
+        padding-left: 22px;
+        margin: 0%;
+        font-size: 17px;
+    }
+
+    .rsv-footer__listOne
+    {
+        margin-bottom: 0%;
+        margin-top: 3%;
+    }
+
+    .rsv-footer__listTwo
+    {
+        margin-top: 3%;
+        margin-bottom: 7%;
+        margin-left: 4%;
+    }
+
+    .rsv-footer__listThree
+    {
+        margin-top: 3%;
+        margin-bottom: 6%
+    }   
 }
